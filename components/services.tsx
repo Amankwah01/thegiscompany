@@ -1,14 +1,6 @@
 import React from "react";
-import {
-    Card,
-    CardAction,
-    // CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "./ui/card";
-import { Button } from "./ui/button";
+import {Card, CardAction, CardDescription, CardFooter, CardHeader, CardTitle,} from "./ui/card";
+import {Button} from "./ui/button";
 import {Badge} from "@/components/ui/badge";
 import Image from "next/image";
 
@@ -23,89 +15,89 @@ function Services() {
             </h1>
             <div className="w-full flex flex-row justify-center items-start px-10">
 
-            <Card className="relative mx-auto w-full max-w-sm pt-0 md:my-3">
-            <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-            <Image
-            src="https://avatar.vercel.sh/shadcn1"
-            alt="Event cover"
-            className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
-            />
-            <CardHeader>
-            <CardAction>
+                <Card className="relative mx-auto w-full max-w-sm pt-0 md:my-3">
+                    <div className="absolute inset-0 z-30 aspect-video bg-black/35"/>
+                    <Image
+                        src="https://avatar.vercel.sh/shadcn1"
+                        alt="Event cover"
+                        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+                    />
+                    <CardHeader>
+                        <CardAction>
 
-            </CardAction>
-            <CardTitle>Essential GIS Support</CardTitle>
-                <Badge variant="secondary">Affordable. Fast. Accurate.</Badge>
-            <CardDescription>
-            <div>
-                <ul className="list-disc list-inside">
-                    <li>Georeferencing & digitization</li>
-                    <li>Data cleaning & projections</li>
-                    <li>Simple maps for reports & assignments</li>
-                </ul>
+                        </CardAction>
+                        <CardTitle>Essential GIS Support</CardTitle>
+                        <Badge variant="secondary">Affordable. Fast. Accurate.</Badge>
+                        <CardDescription>
+                            <div>
+                                <ul className="list-disc list-inside">
+                                    <li>Georeferencing & digitization</li>
+                                    <li>Data cleaning & projections</li>
+                                    <li>Simple maps for reports & assignments</li>
+                                </ul>
+                            </div>
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <Button className="w-full">View Event</Button>
+                    </CardFooter>
+                </Card>
+                <Card className="relative mx-auto w-full max-w-sm pt-0">
+                    <div className="absolute inset-0 z-30 aspect-video bg-black/35"/>
+                    <Image
+                        src="https://avatar.vercel.sh/shadcn1"
+                        alt="Event cover"
+                        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+                    />
+                    <CardHeader>
+                        <CardAction>
+
+                        </CardAction>
+                        <CardTitle>Professional GIS Analysis</CardTitle>
+                        <Badge variant="secondary">Insight-driven GIS solutions.</Badge>
+                        <CardDescription>
+                            <div>
+                                <ul className="list-disc list-inside">
+                                    <li>Advanced spatial analysis</li>
+                                    <li>Remote sensing & modeling</li>
+                                    <li>Research-ready maps & methods</li>
+                                </ul>
+                            </div>
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <Button className="w-full">View Event</Button>
+                    </CardFooter>
+                </Card>
+                <Card className="relative mx-auto w-full max-w-sm pt-0">
+                    <div className="absolute inset-0 z-30 aspect-video bg-black/35"/>
+                    <Image
+                        src="https://avatar.vercel.sh/shadcn1"
+                        alt="Event cover"
+                        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+                    />
+                    <CardHeader>
+                        <CardAction>
+
+                        </CardAction>
+                        <CardTitle>Enterprise GIS & Spatial Intelligence</CardTitle>
+                        <Badge variant="secondary">Custom GIS solutions built for scale.</Badge>
+                        <CardDescription>
+                            <div>
+                                <ul className="list-disc list-inside">
+                                    <li>Web maps & dashboards</li>
+                                    <li>Spatial databases & automation</li>
+                                    <li>Location intelligence & decision support</li>
+                                </ul>
+                            </div>
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <Button className="w-full">View Event</Button>
+                    </CardFooter>
+                </Card>
             </div>
-            </CardDescription>
-            </CardHeader>
-            <CardFooter>
-            <Button className="w-full">View Event</Button>
-            </CardFooter>
-            </Card>
-            <Card className="relative mx-auto w-full max-w-sm pt-0">
-                <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-                <Image
-                    src="https://avatar.vercel.sh/shadcn1"
-                    alt="Event cover"
-                    className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
-                />
-                <CardHeader>
-                    <CardAction>
-
-                    </CardAction>
-                    <CardTitle>Professional GIS Analysis</CardTitle>
-                    <Badge variant="secondary">Insight-driven GIS solutions.</Badge>
-                    <CardDescription>
-                        <div>
-                            <ul className="list-disc list-inside">
-                                <li>Advanced spatial analysis</li>
-                                <li>Remote sensing & modeling</li>
-                                <li>Research-ready maps & methods</li>
-                            </ul>
-                        </div>
-                    </CardDescription>
-                </CardHeader>
-                <CardFooter>
-                    <Button className="w-full">View Event</Button>
-                </CardFooter>
-            </Card>
-            <Card className="relative mx-auto w-full max-w-sm pt-0">
-                <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-                <Image
-                    src="https://avatar.vercel.sh/shadcn1"
-                    alt="Event cover"
-                    className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
-                />
-                <CardHeader>
-                    <CardAction>
-
-                    </CardAction>
-                    <CardTitle>Enterprise GIS & Spatial Intelligence</CardTitle>
-                    <Badge variant="secondary">Custom GIS solutions built for scale.</Badge>
-                    <CardDescription>
-                        <div>
-                            <ul className="list-disc list-inside">
-                                <li>Web maps & dashboards</li>
-                                <li>Spatial databases & automation</li>
-                                <li>Location intelligence & decision support</li>
-                            </ul>
-                        </div>
-                    </CardDescription>
-                </CardHeader>
-                <CardFooter>
-                    <Button className="w-full">View Event</Button>
-                </CardFooter>
-            </Card>
         </div>
-            </div>
     );
 }
 
