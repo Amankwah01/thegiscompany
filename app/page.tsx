@@ -2,7 +2,6 @@ import AboutUs from "@/components/about-us";
 import { Navigation } from "@/components/app-navbar";
 import ContactUs from "@/components/contact-us";
 import Hero from "@/components/hero";
-import Image from "next/image";
 import Services from "@/components/services";
 
 export default function Home() {

@@ -1,18 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import { Label } from "./ui/label";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Hospital } from "lucide-react";
-import { Textarea } from "./ui/textarea";
+
 
 function AboutUs() {
   return (

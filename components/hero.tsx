@@ -1,7 +1,6 @@
-import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 import React from "react";
 import { Button } from "./ui/button";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/dist/client/link";
 
 function Hero() {
