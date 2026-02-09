@@ -7,8 +7,8 @@ function Hero() {
     return (
         <div
             id="hero"
-            className="grid grid-cols-1 items-center justify-between h-[60vh] w-full bg-[url('/bg-tgc.jpg')] bg-size-[auto_1100px] bg-fixed bg-no-repeat bg-center bg-white
-      dark:bg-black p-[60px]"
+            className="grid grid-cols-1 items-center justify-between h-[90vh] w-full bg-[url('/bg-tgc.jpg')] bg-size-[auto_1100px] bg-fixed bg-no-repeat bg-center bg-white
+      dark:bg-black p-15"
         >
             {/*<div>*/}
             {/*  <Image*/}

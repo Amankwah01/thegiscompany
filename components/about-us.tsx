@@ -25,7 +25,7 @@ function AboutUs() {
                         <h1 className=" w-full text-2xl font-bold text-teal-600 my-2">
                             Our Story
                         </h1>
-                        <div className="grid grid-cols-12 md:grid-cols-1 gap-y-5">
+                        <div className="grid grid-cols-1 md:grid-cols-1 gap-y-5">
                             <div className="rounded-lg border-2 p-5 ">
                                 <h1 className="w-full text-2xl font-bold my-2">History</h1>
                                 <p className="leading-6">
