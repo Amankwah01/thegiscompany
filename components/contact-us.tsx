@@ -11,9 +11,9 @@ function ContactUs() {
             id="contact-us"
             className="w-full flex justify-center p-10 bg-white dark:bg-black"
         >
-            <div className=" bg-teal-600 flex flex-col h-150 px-10 mb-5 rounded-2xl">
-                <div className="flex flex-row justify-between w-full h-full">
-                    <div className="w-full ms-10 flex flex-col gap-y-2 justify-center items-start text-black">
+            <div className=" dark:bg-green-400 bg-green-700 flex flex-col h-full p-10 mb-5 rounded-2xl">
+                <div className="flex md:flex-row flex-col justify-between w-full h-full">
+                    <div className="w-full md:ms-10 flex flex-col gap-y-2 justify-center items-start text-white">
                         <h1 className="text-4xl font-semibold text mb-2">A
                             Get in touch with <br/> us
                         </h1>
@@ -37,7 +37,7 @@ function ContactUs() {
                         </div>
                     </div>
                     <div className="w-full flex justify-center items-center">
-                        <Card className="w-5/6">
+                        <Card className="w-full md:ms-10">
                             <CardHeader>
                                 <CardTitle>Contact Us</CardTitle>
                                 <CardDescription></CardDescription>
@@ -92,7 +92,7 @@ function ContactUs() {
                             <CardFooter className="flex-col gap-2">
                                 <Button
                                     type="submit"
-                                    className="bg-teal-600 hover:bg-teal-400 w-full"
+                                    className="dark:bg-green-400 bg-green-700 hover:bg-green-800 w-full"
                                 >
                                     Submit
                                 </Button>

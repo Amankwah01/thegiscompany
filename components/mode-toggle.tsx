@@ -12,7 +12,7 @@ export function ModeToggle() {
 
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger asChild className="hover:bg-green-700 hover:text-white">
                 <Button
                     variant="outline"
                     size="icon"

@@ -16,7 +16,7 @@ export function Navigation() {
     const isMobile = useIsMobile();
     return (
         <nav
-            className="sticky top-0 overflow-hidden w-full flex justify-between items-center bg-background py-3 text-teal-600 px-10 z-100 gap-x-2">
+            className="sticky top-0 overflow-hidden w-full flex justify-between items-center bg-transparent py-3 text-teal-600 px-10 z-0 gap-x-2">
             <Link href="/" className="text-lg font-semibold flex items-center gap-x-2">
                 <Image
                     src="/logo_1.png"
@@ -30,21 +30,21 @@ export function Navigation() {
             <NavigationMenu viewport={isMobile}>
                 <NavigationMenuList className="flex-wrap">
                     <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className="hover:bg-green-700 hover:text-white">
                             <Link href="#services">
                                 Services
                             </Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className="hover:bg-green-700 hover:text-white">
                             <Link href="#contact-us">
                                 Contact Us
                             </Link>
                         </NavigationMenuLink>
                     </NavigationMenuItem>
                     <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className="hover:bg-green-700 hover:text-white">
                             <Link href="#about-us">
                                 About Us
                             </Link>

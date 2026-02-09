@@ -7,7 +7,7 @@ function Hero() {
     return (
         <div
             id="hero"
-            className="grid grid-cols-1 items-center justify-between h-[90vh] w-full bg-[url('/bg-tgc.jpg')] bg-size-[auto_1100px] bg-fixed bg-no-repeat bg-center bg-white
+            className="grid grid-cols-1 items-center justify-between h-[90vh] w-full bg-[url('/hero-1.png')] bg-cover bg-fixed bg-no-repeat bg-center bg-white
       dark:bg-black p-15"
         >
             {/*<div>*/}
@@ -31,13 +31,14 @@ function Hero() {
                     </p>
                     <div className="flex w-full justify-center pt-10 gap-10">
                         <Link href="#send-request">
-                            <Button size="lg" className="bg-teal-600 hover:bg-teal-400">
+                            <Button size="lg" className="dark:bg-green-400 bg-green-700 hover:bg-green-800">
                                 Send a Request
                             </Button>
                         </Link>
                         <Link href="#contact-us">
                             <Button size="lg"
-                                    className="border-teal-600 text-teal-600 hover:text-teal-400 hover:border-teal-400"
+                                    className="dark:border-green-400 border-green-700 hover:border-green-800 border-2
+                                     text-green-700 dark:text-green-500 dark:hover:border-green-400  hover:text-green-800"
                                     variant="outline">
                                 Contact Us
                             </Button>
