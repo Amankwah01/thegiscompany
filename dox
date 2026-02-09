@@ -1,0 +1,274 @@
+import React from 'react';
+import { Map, Layers, BarChart3, Globe, Shield, Users, Mail, Phone, ChevronRight, Menu } from 'lucide-react';
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+
+      {/* --- NAVIGATION --- */}
+      <nav className="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            <div className="flex items-center space-x-2">
+              <Globe className="h-8 w-8 text-teal-400" />
+              <span className="text-xl font-bold text-white tracking-tight">The GIS Company</span>
+            </div>
+            <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+              <a href="#about" className="hover:text-teal-400 transition">About Us</a>
+              <a href="#values" className="hover:text-teal-400 transition">Values</a>
+              <a href="#services" className="hover:text-teal-400 transition">Services</a>
+              <a href="#contact" className="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition">Contact Us</a>
+            </div>
+            {/* Mobile menu button placeholder */}
+            <div className="md:hidden text-white">
+              <Menu />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* --- HERO SECTION --- */}
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900">
+        {/* Background Decorative Elements */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
+           {/* Abstract grid pattern representing maps */}
+           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+           <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-teal-500 opacity-20 blur-[100px]"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-block py-1 px-3 rounded-full bg-slate-800 border border-slate-700 text-teal-400 text-xs font-semibold tracking-wide uppercase mb-6">
+            Geospatial Intelligence
+          </span>
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+            From Spatial Data To <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">
+              Real-World Insight
+            </span>
+          </h1>
+          <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-400 mb-10">
+            We deliver high-quality GIS services, interactive dashboards, and web solutions that help organizations analyze, visualize, and act with confidence.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <button className="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-lg transition shadow-lg shadow-teal-500/25 flex items-center justify-center gap-2">
+              Get Started <ChevronRight className="w-4 h-4" />
+            </button>
+            <button className="px-8 py-4 bg-transparent border border-slate-600 text-white font-semibold rounded-lg hover:bg-slate-800 transition">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* --- AIM SECTION --- */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Our Aim</h2>
+          <p className="text-xl text-slate-600 leading-relaxed">
+            To empower businesses, institutions, and communities with <span className="text-teal-600 font-semibold">accurate geospatial insights</span> and digital solutions that support smarter planning, efficient resource management, and data-driven decisions.
+          </p>
+        </div>
+      </section>
+
+      {/* --- STORY / ABOUT SECTION --- */}
+      <section id="about" className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+
+            {/* Left: Text Content */}
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="h-1 w-12 bg-teal-500 rounded"></div>
+                <span className="text-teal-600 font-bold uppercase text-sm tracking-wider">Our Story</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                Bridging the gap between technology and decision-making.
+              </h2>
+              <div className="space-y-6 text-slate-600">
+                <p>
+                  The GIS Company was founded with a singular goal: to demystify geospatial technology. Built by a dedicated geospatial specialist and developer, we grew from small mapping tasks into a full-service provider.
+                </p>
+                <p>
+                  Today, we offer comprehensive GIS analysis, mapping, dashboards, and customized web platforms for businesses and organizations across the region.
+                </p>
+
+                <div className="bg-white p-6 rounded-xl border-l-4 border-teal-500 shadow-sm mt-6">
+                  <h4 className="font-bold text-slate-900 mb-2">Our Mission</h4>
+                  <p className="italic text-slate-600">
+                    "To deliver high-quality GIS services and modern web solutions that transform complex data into actionable intelligence."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Visual / Image Placeholder */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-teal-200 rounded-2xl opacity-30 blur-lg"></div>
+              {/* Replace src with your actual image path */}
+              <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+                alt="Digital Map Interface"
+                className="relative rounded-2xl shadow-2xl border border-slate-200 w-full object-cover h-96"
+              />
+              {/* Floating Stat Card */}
+              <div className="absolute -bottom-6 -left-6 bg-slate-900 p-6 rounded-xl shadow-xl text-white max-w-xs hidden md:block">
+                <div className="flex items-center gap-3 mb-2">
+                  <BarChart3 className="text-teal-400" />
+                  <span className="font-bold text-lg">Data Driven</span>
+                </div>
+                <p className="text-sm text-slate-400">Turning millions of data points into clear, visual strategies.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* --- VALUES SECTION --- */}
+      <section id="values" className="py-24 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Our Core Values</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              We don't just build maps; we build trust through technical excellence and ethical data handling.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <ValueCard
+              icon={<Map className="w-6 h-6 text-teal-400" />}
+              title="Accuracy"
+              desc="We ensure every map, analysis, and solution meets the highest technical standards."
+            />
+            {/* Card 2 */}
+            <ValueCard
+              icon={<Layers className="w-6 h-6 text-teal-400" />}
+              title="Innovation"
+              desc="We combine GIS with modern web technologies to deliver smarter digital tools."
+            />
+             {/* Card 3 */}
+            <ValueCard
+              icon={<Shield className="w-6 h-6 text-teal-400" />}
+              title="Integrity"
+              desc="We prioritize transparency, trust, and ethical data handling."
+            />
+             {/* Card 4 */}
+            <ValueCard
+              icon={<BarChart3 className="w-6 h-6 text-teal-400" />}
+              title="Impact"
+              desc="We focus on solutions that create real value for clients and their communities."
+            />
+             {/* Card 5 */}
+            <ValueCard
+              icon={<Users className="w-6 h-6 text-teal-400" />}
+              title="Collaboration"
+              desc="We work closely with clients to build solutions that fit their needs perfectly."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* --- CONTACT SECTION --- */}
+      <section id="contact" className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl shadow-xl overflow-hidden grid lg:grid-cols-5">
+
+            {/* Contact Info (Dark Side) */}
+            <div className="lg:col-span-2 bg-slate-900 p-10 text-white flex flex-col justify-between">
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Get in touch</h3>
+                <p className="text-slate-400 mb-8 leading-relaxed">
+                  Ready to visualize your data? Whether you need a simple map or a complex spatial dashboard, our team is here to guide you.
+                </p>
+
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <Mail className="w-6 h-6 text-teal-500 mt-1" />
+                    <div>
+                      <p className="text-xs text-slate-500 uppercase font-semibold">Email</p>
+                      <a href="mailto:mail.thegiscompany@gmail.com" className="hover:text-teal-400 transition">mail.thegiscompany@gmail.com</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Phone className="w-6 h-6 text-teal-500 mt-1" />
+                    <div>
+                      <p className="text-xs text-slate-500 uppercase font-semibold">Phone</p>
+                      <a href="tel:+233501308600" className="hover:text-teal-400 transition">+233 50 130 8600</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12">
+                 {/* Social placeholders */}
+                 <div className="flex gap-4">
+                   <div className="w-10 h-10 rounded-full bg-slate-800 hover:bg-teal-500 transition cursor-pointer flex items-center justify-center">X</div>
+                   <div className="w-10 h-10 rounded-full bg-slate-800 hover:bg-teal-500 transition cursor-pointer flex items-center justify-center">in</div>
+                 </div>
+              </div>
+            </div>
+
+            {/* Contact Form (Light Side) */}
+            <div className="lg:col-span-3 p-10">
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">First Name</label>
+                    <input type="text" placeholder="John" className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
+                    <input type="text" placeholder="Doe" className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition" />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                  <input type="email" placeholder="john@example.com" className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">Message</label>
+                  <textarea rows={4} placeholder="How can we help you visualize your data?" className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition"></textarea>
+                </div>
+                <button className="w-full py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-lg transition shadow-lg">
+                  Submit Message
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* --- FOOTER --- */}
+      <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div className="max-w-7xl mx-auto px-4 text-center sm:text-left sm:flex justify-between items-center">
+          <div className="mb-4 sm:mb-0">
+            <span className="text-white font-bold text-lg">The GIS Company</span>
+            <p className="text-sm mt-1">© {new Date().getFullYear()} All rights reserved.</p>
+          </div>
+          <div className="flex justify-center sm:justify-end gap-6 text-sm">
+            <a href="#" className="hover:text-white transition">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition">Terms of Service</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  );
+}
+
+// Simple Card Component for Values Section
+function ValueCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
+  return (
+    <div className="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-teal-500/50 hover:bg-slate-800/80 transition group">
+      <div className="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
+      <p className="text-slate-400 leading-relaxed">
+        {desc}
+      </p>
+    </div>
+  )
+}
