@@ -24,6 +24,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Button } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
 import Image from "next/image";
+import React from "react";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -65,30 +66,40 @@ const components: { title: string; href: string; description: string }[] = [
 export function Navigation() {
   const isMobile = useIsMobile();
   return (
-    <nav className="sticky top-0 overflow-hidden w-full flex justify-end items-center bg-background py-3 text-teal-600 px-10 z-100 gap-x-2">
-      {/* <Link href="/" className="text-lg font-semibold flex items-center">
-        <HomeIcon className="inline-block mb-1 mr-2 stroke-teal-600" /> Home
-      </Link> */}
+    <nav className="sticky top-0 overflow-hidden w-full flex justify-between items-center bg-background py-3 text-teal-600 px-10 z-100 gap-x-2">
+      <Link href="/" className="text-lg font-semibold flex items-center gap-x-2">
+        <Image
+            src="/logo_1.png"
+            alt="Hero Image"
+            width={30}
+            height={20}
+            className="rounded-lg"
+        /> the GIS Company
+      </Link>
       {/* Right Side */}
       <NavigationMenu viewport={isMobile}>
         <NavigationMenuList className="flex-wrap">
-          {/* <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
-            <SearchInput />
-          </NavigationMenuItem> */}
-          {/* <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
+           <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
+             <NavigationMenuLink asChild>
+               <Link href="#services">
+                 Services
+               </Link>
+             </NavigationMenuLink>
+          </NavigationMenuItem>
+           <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
             <NavigationMenuLink asChild>
-              <Link href="/docs">
-                <BellDot className="stroke-green-700" />
+              <Link href="#contact-us">
+                Contact Us
               </Link>
             </NavigationMenuLink>
-          </NavigationMenuItem> */}
-          {/* <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
+          </NavigationMenuItem>
+           <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
             <NavigationMenuLink asChild>
-              <Link href="/docs">
-                <User className="stroke-green-700" />
+              <Link href="#about-us">
+                About Us
               </Link>
             </NavigationMenuLink>
-          </NavigationMenuItem> */}
+          </NavigationMenuItem>
           <NavigationMenuItem className="bg-transparent focus:outline-none focus:ring-0 focus:shadow-none">
             <ModeToggle />
           </NavigationMenuItem>

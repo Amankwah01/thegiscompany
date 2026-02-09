@@ -8,20 +8,22 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="grid grid-cols-3 items-center justify-between w-full mt-10 bg-white dark:bg-black px-10"
+      className="grid grid-cols-1 items-center justify-between h-[60vh] w-full bg-[url('/bg-tgc.jpg')] bg-size-[auto_1100px] bg-fixed bg-no-repeat bg-center bg-white
+      dark:bg-black p-[60px]"
     >
-      <div>
-        <Image
-          src="/hero-the-gis-company.jpg"
-          alt="Hero Image"
-          width={500}
-          height={300}
-        />
-      </div>
+      {/*<div>*/}
+      {/*  <Image*/}
+      {/*    src="/the-gis-company-logo.jpeg"*/}
+      {/*    alt="Hero Image"*/}
+      {/*    width={500}*/}
+      {/*    height={300}*/}
+      {/*    className="rounded-lg"*/}
+      {/*  />*/}
+      {/*</div>*/}
       <div className="col-span-2">
-        <div className="flex flex-col w-full text-center px-2">
+        <div className="flex flex-col w-full text-center px-2 text-white">
           <h1 className="text-6xl font-semibold">
-            Turning Complex Data Into Clear Direction
+            From Spatial Data To Real-world Insight
           </h1>
           <p className="pt-10">
             We deliver high-quality GIS services, interactive dashboards, and
@@ -29,13 +31,13 @@ function Hero() {
             with confidence.
           </p>
           <div className="flex w-full justify-center pt-10 gap-10">
-            <Link href="#get-started">
+            <Link href="#send-request">
               <Button size="lg" className="bg-teal-600 hover:bg-teal-400">
-                Get Started
+                Send a Request
               </Button>
             </Link>
             <Link href="#contact-us">
-              <Button size="lg" className="border-teal-600" variant="outline">
+              <Button size="lg" className="border-teal-600 text-teal-600 hover:text-teal-400 hover:border-teal-400" variant="outline">
                 Contact Us
               </Button>
             </Link>

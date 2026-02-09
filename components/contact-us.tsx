@@ -23,7 +23,7 @@ function ContactUs() {
       <div className=" bg-teal-600 flex flex-col h-150 px-10 mb-5 rounded-2xl">
         <div className="flex flex-row justify-between w-full h-full">
           <div className="w-full ms-10 flex flex-col gap-y-2 justify-center items-start text-black">
-            <h1 className="text-4xl font-semibold text mb-2">
+            <h1 className="text-4xl font-semibold text mb-2">A
               Get in touch with <br /> us
             </h1>
             <p className="leading-6">
@@ -34,14 +34,14 @@ function ContactUs() {
             </p>
             <div className="flex flex-col">
               Email:
-              <a className="text-lg" href="mailto:example@email.com">
-                healthinquire@example.com
+              <a className="text-lg" href="mailto:mail.thegiscompany@gmail.com">
+                mail.thegiscompany@gmail.com
               </a>
             </div>
             <div className="flex flex-col">
               Phone:
-              <a className="text-lg" href="tel:+123456789">
-                +233 1234 456 789
+              <a className="text-lg" href="tel:+233501308600">
+                +233 50 130 8600
               </a>
             </div>
           </div>
