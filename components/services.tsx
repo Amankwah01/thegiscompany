@@ -10,6 +10,7 @@ import {
 } from "./ui/card";
 import { Button } from "./ui/button";
 import {Badge} from "@/components/ui/badge";
+import Image from "next/image";
 
 function Services() {
     return (
@@ -24,7 +25,7 @@ function Services() {
 
             <Card className="relative mx-auto w-full max-w-sm pt-0 md:my-3">
             <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-            <img
+            <Image
             src="https://avatar.vercel.sh/shadcn1"
             alt="Event cover"
             className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
@@ -51,7 +52,7 @@ function Services() {
             </Card>
             <Card className="relative mx-auto w-full max-w-sm pt-0">
                 <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-                <img
+                <Image
                     src="https://avatar.vercel.sh/shadcn1"
                     alt="Event cover"
                     className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
@@ -78,7 +79,7 @@ function Services() {
             </Card>
             <Card className="relative mx-auto w-full max-w-sm pt-0">
                 <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
-                <img
+                <Image
                     src="https://avatar.vercel.sh/shadcn1"
                     alt="Event cover"
                     className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
