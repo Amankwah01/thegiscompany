@@ -16,7 +16,7 @@ export function Navigation() {
     const isMobile = useIsMobile();
     return (
         <nav
-            className="sticky top-0 overflow-hidden w-full flex justify-between items-center bg-transparent py-3 text-teal-600 px-10 z-0 gap-x-2">
+            className="absolute fixed top-0 overflow-hidden w-full flex justify-between items-center py-3 text-white px-10 z-2000 gap-x-2">
             <Link href="/" className="text-lg font-semibold flex items-center gap-x-2">
                 <Image
                     src="/logo_1.png"

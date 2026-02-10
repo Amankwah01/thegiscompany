@@ -7,7 +7,7 @@ import Services from "@/components/services";
 export default function Home() {
   return (
     <div className="flex min-h-screen w-full items-center justify-center font-sans">
-      <main className="flex min-h-screen w-full flex-col items-center justify-between bg-transparent dark:bg-black sm:items-start">
+      <main className="relative flex min-h-screen w-full flex-col items-center justify-between bg-transparent dark:bg-black sm:items-start">
           <Navigation />
           <Hero />
           <Services />
