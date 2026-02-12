@@ -1,16 +1,14 @@
 import React from "react";
 import {Card, CardAction, CardDescription, CardFooter, CardHeader, CardTitle,} from "./ui/card";
-import {Button} from "./ui/button";
-import {Badge} from "@/components/ui/badge";
 import Image from "next/image";
 
 function Services() {
     return (
         <div
             id="services"
-            className="w-full flex justify-center flex-col md:col-span-3 col-span-1 md:space-y-3  py-10 bg-white dark:bg-black gap-y-3"
+            className="w-full flex justify-center flex-col md:col-span-3 col-span-1 md:space-y-3 mt-10 py-10 bg-white dark:bg-black gap-y-3"
         >
-            <h1 className=" w-full text-2xl font-bold text-teal-600 my-2 text-center">
+            <h1 className=" w-full text-4xl font-bold text-black my-2 text-center">
                 Our Services
             </h1>
             <div className="w-full flex md:flex-row flex-col justify-center items-start md:gap-x-3 gap-y-3 px-10 text-teal-600">
@@ -29,7 +27,7 @@ function Services() {
 
                         </CardAction>
                         <CardTitle>Essential GIS Support</CardTitle>
-                        <Badge variant="secondary" className="bg-green-700 text-white">Affordable. Fast. Accurate.</Badge>
+                        <p className="bg-green-700 px-1.5 py-1 font-semibold rounded-lg text-[11.5px] w-fit text-white">Affordable. Fast. Accurate.</p>
                         <CardDescription>
                             <div>
                                 <ul className="list-disc list-inside">
@@ -41,7 +39,6 @@ function Services() {
                         </CardDescription>
                     </CardHeader>
                     <CardFooter>
-                        <Button className="w-full dark:bg-green-400 bg-green-700 hover:bg-green-800">View Event</Button>
                     </CardFooter>
                 </Card>
                 <Card className="relative mx-auto w-full  pt-0">
@@ -58,7 +55,7 @@ function Services() {
 
                         </CardAction>
                         <CardTitle>Professional GIS Analysis</CardTitle>
-                        <Badge variant="secondary" className="bg-green-700 text-white">Insight-driven GIS solutions.</Badge>
+                        <p className="bg-green-700 px-1.5 py-1 font-semibold rounded-lg text-[11.5px] w-fit text-white">Insight-driven GIS solutions.</p>
                         <CardDescription>
                             <div>
                                 <ul className="list-disc list-inside">
@@ -70,7 +67,6 @@ function Services() {
                         </CardDescription>
                     </CardHeader>
                     <CardFooter>
-                        <Button className="w-full dark:bg-green-400 bg-green-700 hover:bg-green-800">View Event</Button>
                     </CardFooter>
                 </Card>
                 <Card className="relative mx-auto w-full  pt-0">
@@ -87,7 +83,7 @@ function Services() {
 
                         </CardAction>
                         <CardTitle>Enterprise GIS & Spatial Intelligence</CardTitle>
-                        <Badge variant="secondary" className="bg-green-700 text-white">Custom GIS solutions built for scale.</Badge>
+                        <p className="bg-green-700 text-white text-pretty px-1.5 py-1 font-semibold rounded-lg text-[11.5px] w-fit">Custom GIS solutions built for scale.</p>
                         <CardDescription>
                             <div>
                                 <ul className="list-disc list-inside">
@@ -99,7 +95,28 @@ function Services() {
                         </CardDescription>
                     </CardHeader>
                     <CardFooter>
-                        <Button className="w-full dark:bg-green-400 bg-green-700 hover:bg-green-800">View Event</Button>
+                    </CardFooter>
+                </Card>
+            </div>
+            <div className="w-full flex md:flex-row flex-col justify-center items-start md:gap-x-3 gap-y-3 px-10">
+                <Card className="relative mx-auto w-full pt-0 text-center">
+                    <CardHeader>
+                        <CardAction>
+
+                        </CardAction>
+                        <CardTitle className="mt-5 text-2xl">Still Lost?</CardTitle>
+
+                        <CardDescription>
+                            <div className="w-full flex flex-col justify-center items-center gap-y-3">
+                                <p className="bg-green-700  px-1.5 py-1 font-semibold rounded-lg text-[11.5px] w-fit flex items-center text-white">Custom GIS solutions built for scale.</p>
+                                <p>
+                                    Have a GIS project in mind? Share your objectives, timeline, and available data, and let’s build a clear, results-driven solution tailored to your needs.
+
+                                </p>
+                            </div>
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
                     </CardFooter>
                 </Card>
             </div>

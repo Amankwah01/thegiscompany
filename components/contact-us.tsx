@@ -18,10 +18,7 @@ function ContactUs() {
                             Get in touch with <br/> us
                         </h1>
                         <p className="leading-6">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam, voluptatibus eaque quidem odio reprehenderit sint in
-                            voluptates ullam ipsam natus quia pariatur hic cumque ipsum illum,
-                            debitis eum provident. Itaque.
+                            Reach out to us today, and our team will be happy to assist you.
                         </p>
                         <div className="flex flex-col">
                             Email:

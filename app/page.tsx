@@ -10,9 +10,11 @@ export default function Home() {
       <main className="relative flex min-h-screen w-full flex-col items-center justify-between bg-transparent dark:bg-black sm:items-start">
           <Navigation />
           <Hero />
-          <Services />
-          <AboutUs />
-          <ContactUs />
+          <div className="w-full flex md:px-60 justify-center items-center flex-col">
+              <Services />
+              <AboutUs />
+              <ContactUs />
+          </div>
       </main>
     </div>
   );

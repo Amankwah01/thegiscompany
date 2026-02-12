@@ -5,13 +5,13 @@ function AboutUs() {
     return (
         <div
             id="about-us"
-            className="w-full flex justify-center pt-10 bg-white dark:bg-black"
+            className="w-full flex justify-center pt-10 bg-white dark:bg-black text-center"
         >
             <div className="flex flex-col h-full mb-5 rounded-2xl">
                 <div className="flex flex-col gap-y-3  w-full h-full">
                     <h1 className="w-full text-4xl font-bold px-10 text-center">About Us</h1>
                     <div className="w-full flex flex-col justify-center items-start px-10">
-                        <h1 className=" w-full text-2xl font-bold text-teal-600 my-2">
+                        <h1 className=" w-full text-2xl font-bold text-black my-2">
                             Aim
                         </h1>
                         <p className="leading-6">
@@ -22,11 +22,11 @@ function AboutUs() {
                         </p>
                     </div>
                     <div className="w-full flex flex-col  justify-center items-start px-10">
-                        <h1 className=" w-full text-2xl font-bold text-teal-600 my-2">
+                        <h1 className=" w-full text-2xl font-bold text-black my-2">
                             Our Story
                         </h1>
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-y-5">
-                            <div className="rounded-lg border-2 p-5 ">
+                            <div className="rounded-lg p-5 ">
                                 <h1 className="w-full text-2xl font-bold my-2">History</h1>
                                 <p className="leading-6">
                                     The GIS Company was founded with the goal of bridging the gap
@@ -37,7 +37,7 @@ function AboutUs() {
                                     customized web platforms for businesses and organizations.
                                 </p>
                             </div>
-                            <div className="rounded-lg border-2 p-5 ">
+                            <div className="rounded-lg p-5 ">
                                 <h1 className=" w-full text-2xl font-bold text-black my-2">
                                     Mission
                                 </h1>
@@ -49,31 +49,31 @@ function AboutUs() {
                                     client we serve.
                                 </p>
                             </div>
-                            <div className="rounded-lg border-2 p-5 ">
+                            <div className="p-5 ">
                                 <h1 className=" w-full text-2xl font-bold text-black my-2">
                                     Values
                                 </h1>
-                                <ul className="leading-6">
-                                    <li className="">
-                                        Accuracy – We ensure every map, analysis, and solution meets the highest
-                                        technical standards.
-                                    </li>
-                                    <li className="">
-                                        Innovation – We combine GIS with modern web technologies to deliver smarter
-                                        digital tools.
-                                    </li>
-                                    <li className="">
-                                        Integrity – We prioritize transparency, trust, and ethical data handling.
-                                    </li>
-                                    <li className="">
-                                        Impact – We focus on solutions that create real value for clients and their
-                                        communities.
-                                    </li>
-                                    <li className="">
-                                        Collaboration – We work closely with clients to build solutions that fit their
-                                        needs perfectly.
-                                    </li>
-                                </ul>
+                                <div className="grid gap-6 mx-auto
+                                        sm:grid-cols-1
+                                        md:grid-cols-2
+                                        lg:grid-cols-5">
+                                    <p className="rounded-lg border-2 p-4">
+                                        <strong>Accuracy</strong> – We ensure every map, analysis, and solution meets the highest technical standards.
+                                    </p>
+                                    <p className="rounded-lg border-2 p-4">
+                                        <strong>Innovation</strong> – We combine GIS with modern web technologies to deliver smarter digital tools.
+                                    </p>
+                                    <p className="rounded-lg border-2 p-4">
+                                        <strong>Integrity</strong> – We prioritize transparency, trust, and ethical data handling.
+                                    </p>
+                                    <p className="rounded-lg border-2 p-4 text-center ">
+                                        <strong>Impact</strong> – We focus on solutions that create real value for clients and their communities.
+                                    </p>
+                                    <p className="rounded-lg border-2 p-4">
+                                        <strong>Collaboration</strong> – We work closely with clients to build solutions that fit their needs perfectly.
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
